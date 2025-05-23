@@ -1,103 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Conoce al Equipo</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conoce al Equipo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav class="navbar">
+        <a href="#" class="logo">TeamShowcase</a>
+        <ul class="nav-links">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header id="site-header">
-    <nav class="navbar">
-      <a href="#" class="logo">TeamShowcase</a>
-      <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#team">Equipo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <h1 class="title">Conoce al Equipo</h1>
 
-  <main>
-    <h1 class="title">Conoce al Equipo</h1>
-
-    <section id="team">
+      <section id="team">
         <article class="team-member">
-            <img src="assets/alexander.jpg" alt="Retrato de Alexander Tinoco Sanchez">
-            <div class="info">
+          <img
+            src="assets/alexander.jpg"
+            alt="Retrato de Alexander Tinoco Sanchez"
+          />
+          <div class="info">
             <h2>Alexander Tinoco Sanchez</h2>
-            <p class="role">Desarrollador de Software y Diseñador de Soluciones</p>
+            <p class="role">
+              Desarrollador de Software y Diseñador de Soluciones
+            </p>
             <p class="bio">
-                Alexander es un desarrollador creativo con experiencia en aplicaciones web, móviles y sistemas embebidos. Le apasiona la innovación, el diseño funcional y construir soluciones que conectan con las personas. Disfruta trabajar en equipo, aprender nuevas tecnologías y enseñar a otros.
+              Alexander es un desarrollador creativo con experiencia en
+              aplicaciones web, móviles y sistemas embebidos. Le apasiona la
+              innovación, el diseño funcional y construir soluciones que
+              conectan con las personas. Disfruta trabajar en equipo, aprender
+              nuevas tecnologías y enseñar a otros.
             </p>
             <h3>Pasatiempos & Intereses</h3>
             <ul class="hobbies">
-                <li>Programación Creativa</li>
-                <li>Videojuegos con Mods</li>
-                <li>Viajar y conocer culturas</li>
+              <li>Programación Creativa</li>
+              <li>Videojuegos con Mods</li>
+              <li>Viajar y conocer culturas</li>
             </ul>
-            </div>
+          </div>
         </article>
-        </section>
+      </section>
 
-    <section id="contacto">
-      <form id="contact-form">
-        <h2>Contáctanos</h2>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required />
+      <section id="team">
+        <article class="team-member">
+          <img
+            src="assets/sebastian.jpg"
+            alt="Retrato de Sebastian Di Luca Lozano Reyes"
+          />
+          <div class="info">
+            <h2>Sebastian Di Luca Lozano Reyes</h2>
+            <p class="role">
+              Desarrollador de Software
+            </p>
+            <p class="bio">
+              Sebastian es un desarrollador apasionado con experiencia en
+              aplicaciones web, móviles y diseño de UI. Atraido hacia la
+              innovación en el diseño, construicción de soluciones modenas siguiendo
+              los estándares de calidad. Disfruta trabajar en equipo y aprender
+              nuevas tecnologías.
+            </p>
+            <h3>Pasatiempos & Intereses</h3>
+            <ul class="hobbies">
+              <li>Danza folklorica</li>
+              <li>Música</li>
+              <li>Programación Creativa</li>
+              <li>Videojuegos</li>
+              <li>Anime</li>
+            </ul>
+          </div>
+        </article>
+      </section>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
+      <section id="contacto">
+        <form id="contact-form">
+          <h2>Contáctanos</h2>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="subject">Asunto:</label>
-        <select id="subject" name="subject">
-          <option value="Consulta general">Consulta general</option>
-          <option value="Oportunidad de trabajo">Oportunidad de trabajo</option>
-          <option value="Colaboración">Colaboración</option>
-          <option value="Retroalimentación">Retroalimentación</option>
-        </select>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="subject">Asunto:</label>
+          <select id="subject" name="subject">
+            <option value="Consulta general">Consulta general</option>
+            <option value="Oportunidad de trabajo">
+              Oportunidad de trabajo
+            </option>
+            <option value="Colaboración">Colaboración</option>
+            <option value="Retroalimentación">Retroalimentación</option>
+          </select>
 
-        <button type="submit">Enviar mensaje</button>
-        <p id="confirmation" class="hidden">¡Gracias! Tu mensaje ha sido enviado.</p>
-      </form>
-    </section>
-  </main>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-  <footer>
-    <div class="footer-container">
+          <button type="submit">Enviar mensaje</button>
+          <p id="confirmation" class="hidden">
+            ¡Gracias! Tu mensaje ha sido enviado.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
         <div class="footer-section">
-        <h3>Sobre Nosotros</h3>
-        <p>
-            Somos un equipo apasionado de creadores dedicados a construir productos increíbles que resuelven problemas del mundo real.
-        </p>
+          <h3>Sobre Nosotros</h3>
+          <p>
+            Somos un equipo apasionado de creadores dedicados a construir
+            productos increíbles que resuelven problemas del mundo real.
+          </p>
         </div>
         <div class="footer-section">
-        <h3>Enlaces Rápidos</h3>
-        <ul>
+          <h3>Enlaces Rápidos</h3>
+          <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#team">Equipo</a></li>
             <li><a href="#contacto">Contacto</a></li>
-        </ul>
+          </ul>
         </div>
         <div class="footer-section">
-        <h3>Conecta con Nosotros</h3>
-        <ul>
+          <h3>Conecta con Nosotros</h3>
+          <ul>
             <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
             <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com" target="_blank">GitHub</a></li>
-        </ul>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <p>&copy; 2025 Team Showcase. Todos los derechos reservados.</p>
-    </div>
+      </div>
     </footer>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
