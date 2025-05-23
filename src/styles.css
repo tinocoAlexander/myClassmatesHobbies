@@ -276,7 +276,43 @@ footer {
   color: #94a3b8;
 }
 
-
 .hidden {
   display: none;
+}
+
+
+.dark-mode {
+  --bg-light: #0f172a;
+  --text-dark: #f9fafb;
+  --text-medium: #94a3b8;
+  --gray-border: #334155;
+}
+
+.logo.dark-mode {
+  color: var(--text-dark);
+}
+
+body.dark-mode {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header.dark-mode {
+  background-color: #1e293b;
+}
+
+.team-member.dark-mode {
+  background-color: #1e293b;
+}
+
+form.dark-mode {
+  background-color: #1e293b;
+}
+
+.nav-links li a.dark-mode {
+  color: var(--text-dark);
+}
+
+.nav-links li a.dark-mode:hover {
+  color: var(--primary);
 }
