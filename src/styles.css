@@ -1,0 +1,278 @@
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e3a8a;
+  --bg-light: #f9fafb;
+  --text-dark: #111827;
+  --text-medium: #4b5563;
+  --gray-border: #e5e7eb;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #1d4ed8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #2563eb;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+@media(min-width: 768px) {
+  .team-member {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.team-member img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #bfdbfe;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-member .info {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.team-member h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.team-member .role {
+  color: #2563eb;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem;
+}
+
+.team-member .bio {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.team-member h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.hobbies li {
+  background: #eef2ff;
+  color: #2563eb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-border);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+form button {
+  display: block;
+  width: fit-content;
+  padding: 0.75rem 2rem;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 2rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+
+.hidden {
+  display: none;
+}
