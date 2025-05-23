@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-form');
-  const confirmation = document.getElementById('confirmation');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const confirmation = document.getElementById("confirmation");
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     // Validación básica
@@ -11,11 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = form.message.value.trim();
 
     if (!name || !email || !message) {
-      alert('Por favor, completa todos los campos obligatorios.');
+      Swal.fire({
+        title: "¡Error!",
+        icon: "error",
+        text: "Por favor, completa todos los campos.",
+        confirmButtonText: "Cerrar",
+        draggable: true,
+      });
       return;
     }
 
-    confirmation.classList.remove('hidden');
+    confirmation.classList.remove("hidden");
     form.reset();
   });
 });
