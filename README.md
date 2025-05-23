@@ -1,6 +1,6 @@
-# 👥 TeamShowcase
+# 👥 myClassmatesHobies
 
-**TeamShowcase** es una aplicación web diseñada para presentar a los miembros de un equipo de forma atractiva, responsiva y accesible. Utiliza tecnologías web modernas como HTML5, CSS3 y JavaScript puro para mostrar información personal, biografías y pasatiempos de cada integrante.
+**myClassmatesHobies** es una aplicación web diseñada para presentar a los miembros de un equipo de forma atractiva, responsiva y accesible. Utiliza tecnologías web modernas como HTML5, CSS3 y JavaScript puro para mostrar información personal, biografías y pasatiempos de cada integrante.
 
 ## 🎯 Objetivo del Proyecto
 
@@ -28,7 +28,7 @@
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/teamshowcase.git
+   git clone https://github.com/tinocoAlexander/myClassmatesHobbies
 
     Abre el archivo index.html directamente en tu navegador.
 
