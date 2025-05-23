@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         icon: "error",
         text: "Por favor, completa todos los campos.",
         confirmButtonText: "Cerrar",
-        draggable: true,
       });
       return;
     }
@@ -25,9 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   });
 
-  // Toggle dark mode
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+  // Función para alternar modo oscuro
+  function toggleDarkMode() {
+    const isDark = document.body.classList.toggle("dark-mode");
+
     document.querySelector("header").classList.toggle("dark-mode");
     document
       .querySelectorAll(".team-member")
@@ -36,5 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll(".nav-links li a")
       .forEach((link) => link.classList.toggle("dark-mode"));
-  });
+    toggleBtn.textContent = isDark ? "🌞" : "🌙";
+  }
+  toggleBtn.textContent = "🌙";
+
+  toggleBtn.addEventListener("click", toggleDarkMode);
 });
